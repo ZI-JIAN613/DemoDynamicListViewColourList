@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String colour = etElement.getText().toString();
                 int pos = Integer.parseInt(etIndexElement.getText().toString());
-                pos += 1;
                 alColours.add(pos, colour);
                 aaColour.notifyDataSetChanged();
             }
@@ -61,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int pos = Integer.parseInt(etIndexElement.getText().toString());
-                pos += 1;
                 if (pos < alColours.size()) {
                     alColours.remove(pos);
                     aaColour.notifyDataSetChanged();
@@ -76,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String colour = etElement.getText().toString();
                 int pos = Integer.parseInt(etIndexElement.getText().toString());
-                pos += 1;
                 if (pos < alColours.size()) {
                     alColours.set(pos, colour);
                 }else {
